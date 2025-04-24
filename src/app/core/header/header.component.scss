@@ -1,0 +1,38 @@
+:host {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #009b97;
+    gap: 6px;
+    &-row {
+        background-color: #dcdcdc;
+        &:first-child {
+            padding: 0 12px;
+        }
+        height: 42px; // arbitrary - can load from const
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        .right {
+            display: flex;
+            gap: 12px;
+        }
+
+        &-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            // margin: 3px;
+
+            img {
+                height:64%;
+            }
+        }
+
+    }
+}

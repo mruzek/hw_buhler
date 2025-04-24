@@ -1,0 +1,19 @@
+<div
+    class="machine-line"
+    *ngIf="machineData as md"
+>
+    <ng-container *ngIf="machineData() as md">
+        <ng-container *ngFor="let item, of md.lineData.machines let last = last">
+            <app-machine-item 
+                class="machine-line-item"
+                [machine]=item
+                [status]="md.statusData[item]"
+                [mini]="mini"
+            >
+            </app-machine-item>
+            <div *ngIf="!mini && !last" class="machine-line-connector">
+                <div class="machine-line-connector-line"></div>
+            </div>
+        </ng-container>
+    </ng-container>
+</div>

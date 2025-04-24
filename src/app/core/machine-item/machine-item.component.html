@@ -1,0 +1,21 @@
+<div
+    class="machine-item"
+    [style.color]="visualStatus.color"
+    [style.background-color]="visualStatus.bgcolor"
+>
+    <div class="machine-item-center">
+        <div 
+            *ngIf="!mini"
+            class="machine-item-center-icon"
+        >
+            <mat-icon>{{icon}}</mat-icon>
+        </div>
+        <div class="machine-item-center-name">
+            {{name}}
+        </div>
+    </div>
+
+    <div class="machine-item-status">
+        <mat-icon [style.color]=visualStatus.iconColor>{{visualStatus.icon}}</mat-icon>
+    </div>    
+</div>

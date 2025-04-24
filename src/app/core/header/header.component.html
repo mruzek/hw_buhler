@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="header-row">
+        <div class="left">
+            <div class="header-row-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_B%C3%BChler_AG.svg/1200px-Logo_B%C3%BChler_AG.svg.png" alt="logo_buhler">
+            </div>
+        </div>
+        
+        <div class="right">
+            <div class="header-row-item"><mat-icon>access_time</mat-icon>{{time$ | async | date:'dd.MM.YYYY HH:mm:ss'}}</div>
+            <div class="header-row-item"><mat-icon>person</mat-icon>{{user}}</div>
+        </div>
+    </div>
+    <div class="header-row">
+        <app-machine-line></app-machine-line>
+    </div>
+ </div>
